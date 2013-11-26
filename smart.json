@@ -1,0 +1,10 @@
+{
+  "meteor": {
+    "tag": "release/v0.6.4"
+  },
+  "packages": {
+    "z-mongo-admin": {
+      "path": "/Users/alexey/Dropbox/Code/Houston"
+    }
+  }
+}
