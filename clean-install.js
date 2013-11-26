@@ -18,13 +18,11 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
     if (!stuff.findOne()) {
-      stuff.insert({
-        name: "Jonah",
-        age: 42
-      });
-      stuff.insert({
-        name: "Sarah",
-        age: 34
+      _.range(1000).forEach(function(item) {
+        stuff.insert({
+          name: "Jonah",
+          age: item
+        });
       });
     }
   });
