@@ -4,8 +4,7 @@
   },
   "packages": {
     "z-mongo-admin": {
-      "git": "https://github.com/gterrono/meteor-admin-ui.git",
-      "branch": "iron-router"
+      "path": "../Houston"
     }
   }
 }

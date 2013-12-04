@@ -3,15 +3,12 @@
   "dependencies": {
     "basePackages": {
       "z-mongo-admin": {
-        "git": "https://github.com/gterrono/meteor-admin-ui.git",
-        "branch": "iron-router"
+        "path": "../Houston"
       }
     },
     "packages": {
       "z-mongo-admin": {
-        "git": "https://github.com/gterrono/meteor-admin-ui.git",
-        "branch": "iron-router",
-        "commit": "45b332ba22f9aa42225a7bd9bf9de29541590bbe"
+        "path": "../Houston"
       },
       "paginated-subscription": {
         "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",

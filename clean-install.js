@@ -16,14 +16,19 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
+    var secret = new Meteor.Collection("shhh");
+    Houston.add_collection(secret);
+
     // code to run on server at startup
     if (!stuff.findOne()) {
+      secret.insert({"dont": "tell"});
       _.range(1000).forEach(function(item) {
         stuff.insert({
           name: "Jonah",
           age: item
         });
       });
+      console.log("loading done");
     }
   });
 }
